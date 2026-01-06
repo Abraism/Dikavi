@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan DKV | Desain Komunikasi Visual</title>
+    <!-- Mengambil Font Google untuk tampilan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Outfit:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-logo">DKV</div>
+        <div class="loader-text">MEMUAT KREATIVITAS...</div>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="transition-overlay" id="transitionOverlay"></div>
+
+    <!-- Custom Cursor Elements -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Animated Background Blobs -->
+    <div class="blobs-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">DKV</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li class="theme-toggle" id="themeToggle">☀️</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Ekspresikan <br><span class="highlight-text">Kreativitasmu</span></h1>
+                <p>Bergabunglah dengan jurusan Desain Komunikasi Visual. Tempat di mana seni bertemu dengan teknologi dan strategi komunikasi.</p>
+                <a href="#about" class="btn">Pelajari Lebih Lanjut</a>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="DKV Art">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2 class="reveal">Apa itu DKV?</h2>
+            <span></span>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <!-- Placeholder image -->
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Mahasiswa DKV">
+            </div>
+            <div class="about-text reveal">
+                <p><strong>Desain Komunikasi Visual (DKV)</strong> adalah cabang ilmu desain yang mempelajari konsep komunikasi dan ungkapan kreatif, teknik, dan media untuk menyampaikan pesan dan gagasan secara visual.</p>
+                <p>Di sini, kamu tidak hanya belajar menggambar, tetapi juga bagaimana memecahkan masalah komunikasi melalui elemen visual seperti tipografi, ilustrasi, fotografi, dan animasi.</p>
+                <p>Lulusan DKV sangat dibutuhkan di era digital saat ini, mulai dari agensi periklanan, startup teknologi, hingga industri perfilman.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section id="materi">
+        <div class="section-title reveal">
+            <h2>Apa yang Dipelajari?</h2>
+            <span></span>
+        </div>
+        <div class="materi-grid reveal">
+            <div class="card">
+                <span class="card-icon">🎨</span>
+                <h3>Ilustrasi & Seni</h3>
+                <p>Mengembangkan kemampuan menggambar manual dan digital untuk berbagai kebutuhan media.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">📷</span>
+                <h3>Fotografi</h3>
+                <p>Teknik pengambilan gambar, pencahayaan, dan komposisi untuk komunikasi visual.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">💻</span>
+                <h3>Desain Grafis</h3>
+                <p>Layout, branding, tipografi, dan penggunaan software industri seperti Adobe Creative Cloud.</p>
+            </div>
+            <div class="card">
+                <span class="card-icon">🎬</span>
+                <h3>Videografi & Animasi</h3>
+                <p>Membuat konten bergerak (motion graphic) dan editing video untuk media digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="section-title reveal">
+            <h2>Galeri Karya</h2>
+            <span></span>
+        </div>
+        <div class="gallery-grid reveal">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya 1">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya 2">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya 3">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1572044162444-ad6021194c13?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jurusan DKV Creative. Dibuat dengan Kreativitas.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="Preview" id="lightboxImg">
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const src = img.getAttribute('src');
+                lightboxImg.setAttribute('src', src);
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Scroll Reveal Animation
+        const reveals = document.querySelectorAll('.reveal');
+
+        const revealOnScroll = () => {
+            const windowHeight = window.innerHeight;
+            const elementVisible = 150;
+
+            reveals.forEach((reveal) => {
+                const elementTop = reveal.getBoundingClientRect().top;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', revealOnScroll);
+        // Trigger once on load
+        revealOnScroll();
+
+        // --- 1. TYPEWRITER EFFECT (Efek Mengetik) ---
+        const heroTitle = document.querySelector('.hero-content h1');
+        const originalText = heroTitle.innerText;
+        heroTitle.innerText = ''; // Kosongkan teks awal
+        
+        // Tambahkan elemen kursor
+        const cursorSpan = document.createElement('span');
+        cursorSpan.classList.add('typing-cursor');
+        cursorSpan.innerHTML = '&nbsp;';
+        heroTitle.parentNode.insertBefore(cursorSpan, heroTitle.nextSibling);
+        heroTitle.appendChild(cursorSpan); // Pindahkan kursor ke dalam h1
+
+        let charIndex = 0;
+        function typeWriter() {
+            if (charIndex < originalText.length) {
+                // Hapus kursor sementara, tambah huruf, tambah kursor lagi
+                cursorSpan.remove();
+                heroTitle.innerText += originalText.charAt(charIndex);
+                heroTitle.appendChild(cursorSpan);
+                charIndex++;
+                setTimeout(typeWriter, 100); // Kecepatan mengetik (ms)
+            }
+        }
+        
+        // Mulai mengetik setelah sedikit delay
+        setTimeout(typeWriter, 1000);
+
+        // --- 2. 3D TILT EFFECT PADA CARD ---
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                // Hitung rotasi berdasarkan posisi mouse
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = ((y - centerY) / centerY) * -15; // Max rotasi X
+                const rotateY = ((x - centerX) / centerX) * 15;  // Max rotasi Y
+
+                // Terapkan transformasi
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+                
+                // Hapus transisi saat bergerak agar responsif (tidak lag)
+                card.style.transition = 'transform 0.1s ease';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                // Reset posisi saat mouse keluar
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                // Tambahkan transisi halus saat reset
+                card.style.transition = 'transform 0.5s ease';
+            });
+        });
+
+        // --- 3. HERO MOUSE PARALLAX ---
+        const heroSection = document.querySelector('.hero');
+        const heroContent = document.querySelector('.hero-content');
+
+        heroSection.addEventListener('mousemove', (e) => {
+            // Gerakkan konten sedikit berlawanan arah mouse
+            const x = (window.innerWidth - e.pageX * 2) / 50;
+            const y = (window.innerHeight - e.pageY * 2) / 50;
+            
+            heroContent.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+
+        // --- 4. THEME TOGGLE ---
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Cek preferensi tersimpan
+        if(localStorage.getItem('theme') === 'light') {
+            body.classList.add('light-theme');
+            themeToggle.textContent = '🌙';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-theme');
+            if(body.classList.contains('light-theme')) {
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            } else {
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            }
+        });
+
+        // --- 5. CUSTOM CURSOR LOGIC ---
+        const cursorDot = document.querySelector('[data-cursor-dot]');
+        const cursorOutline = document.querySelector('[data-cursor-outline]');
+        
+        let mouseX = 0;
+        let mouseY = 0;
+        let outlineX = 0;
+        let outlineY = 0;
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // Dot follows instantly
+            cursorDot.style.left = `${mouseX}px`;
+            cursorDot.style.top = `${mouseY}px`;
+        });
+
+        // Smooth trail animation for outline
+        const animateCursor = () => {
+            outlineX += (mouseX - outlineX) * 0.15; // Speed factor
+            outlineY += (mouseY - outlineY) * 0.15;
+            
+            cursorOutline.style.left = `${outlineX}px`;
+            cursorOutline.style.top = `${outlineY}px`;
+            
+            requestAnimationFrame(animateCursor);
+        };
+        animateCursor();
+
+        // Hover effect on interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .theme-toggle, .card, .gallery-item');
+        
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+        });
+
+        // Add click animation (Efek Klik)
+        window.addEventListener('mousedown', () => document.body.classList.add('clicking'));
+        window.addEventListener('mouseup', () => document.body.classList.remove('clicking'));
+
+        // --- 6. LOADING SCREEN LOGIC ---
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            // Hilangkan loader setelah halaman dimuat (tambah sedikit delay biar animasinya kelihatan)
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 2000); // Durasi loading 2 detik
+        });
+
+        // --- 7. PAGE TRANSITION LOGIC ---
+        const transitionOverlay = document.getElementById('transitionOverlay');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Mencegah lompatan langsung
+                const target = link.getAttribute('href');
+                
+                // 1. Fade Out (Munculkan Overlay Gelap)
+                transitionOverlay.classList.add('active');
+                
+                // 2. Tunggu animasi selesai, baru pindah
+                setTimeout(() => {
+                    window.location.href = target;
+                    
+                    // 3. Fade In (Hilangkan Overlay)
+                    // Beri sedikit jeda agar perpindahan terasa mulus
+                    setTimeout(() => {
+                        transitionOverlay.classList.remove('active');
+                    }, 100);
+                }, 500); // Sesuai durasi transisi CSS (0.5s)
+            });
+        });
+
+        // --- 8. MOBILE MENU LOGIC ---
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Tutup menu saat link diklik
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
